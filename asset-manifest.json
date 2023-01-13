@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/todo-beep/static/css/main.589ff674.css",
+    "main.js": "/todo-beep/static/js/main.894b3bec.js",
+    "index.html": "/todo-beep/index.html",
+    "main.589ff674.css.map": "/todo-beep/static/css/main.589ff674.css.map",
+    "main.894b3bec.js.map": "/todo-beep/static/js/main.894b3bec.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.589ff674.css",
+    "static/js/main.894b3bec.js"
+  ]
+}
