@@ -1,0 +1,9 @@
+.sectionTodo {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  max-width: 960px;
+  width: 100%;
+  margin: 32px auto;
+  /* flex-direction: row; */
+}
