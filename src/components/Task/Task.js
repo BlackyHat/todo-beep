@@ -8,7 +8,7 @@ export const Task = ({ task }) => {
 
   const handleDelete = () => dispatch(deleteTodo(task.id));
 
-  const handleToggle = () => dispatch(toggleCompleted(task.id));
+  const handleToggle = () => dispatch(toggleCompleted(task));
 
   return (
     <div className={css.wrapper}>

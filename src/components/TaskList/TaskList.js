@@ -25,10 +25,10 @@ const getVisibleTasks = (tasks, statusFilter) => {
 };
 
 export const TaskList = () => {
-  // const tasks = useSelector(getTasks);
   const tasks = useSelector(getTasks);
   const isLoading = useSelector(getIsLoading);
   const error = useSelector(getError);
+
   const statusFilter = useSelector(getStatusFilter);
   const visibleTasks = getVisibleTasks(tasks, statusFilter);
   return (

@@ -44,7 +44,7 @@ export const toggleCompleted = createAsyncThunk(
   "todos/toggleCompleted",
   async (todo, thunkAPI) => {
     try {
-      const { data } = await todoApi.put(`/todo-beep/${todo}`, {
+      const { data } = await todoApi.put(`/todo-beep/${todo.id}`, {
         completed: !todo.completed,
       });
       return data;

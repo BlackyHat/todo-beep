@@ -5,5 +5,11 @@
   max-width: 960px;
   width: 100%;
   margin: 32px auto;
-  /* flex-direction: row; */
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .sectionTodo {
+    flex-direction: row;
+  }
 }
