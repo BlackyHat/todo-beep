@@ -11,14 +11,16 @@ in this repo i used next practice:
 - REST API;
 - axios;
 - add loader;
+- builder (update createSlice);
+- add google firebase DB
 
 Plans to add:
 
-- routes;
+<!-- - routes;
 - rtk query;
-- material ui;
+- material ui; -->
+
 - auth;
-- builder (update createSlice);
 - footer;
 - filter;
 - editor;
