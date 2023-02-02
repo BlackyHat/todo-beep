@@ -1,7 +1,7 @@
 export const getStatusFilter = (state) => state.filters.status;
 
-export const getTasks = (state) => state.contacts.items;
+export const getTasks = (state) => state.todos.items;
 
-export const getIsLoading = (state) => state.contacts.isLoading;
+export const getIsLoading = (state) => state.todos.isLoading;
 
-export const getError = (state) => state.contacts.error;
+export const getError = (state) => state.todos.error;
