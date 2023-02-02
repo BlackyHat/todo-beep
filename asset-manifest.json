@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/todo-beep/static/css/main.ba07c1ec.css",
-    "main.js": "/todo-beep/static/js/main.f19508cd.js",
+    "main.js": "/todo-beep/static/js/main.a12192d8.js",
     "index.html": "/todo-beep/index.html",
     "main.ba07c1ec.css.map": "/todo-beep/static/css/main.ba07c1ec.css.map",
-    "main.f19508cd.js.map": "/todo-beep/static/js/main.f19508cd.js.map"
+    "main.a12192d8.js.map": "/todo-beep/static/js/main.a12192d8.js.map"
   },
   "entrypoints": [
     "static/css/main.ba07c1ec.css",
-    "static/js/main.f19508cd.js"
+    "static/js/main.a12192d8.js"
   ]
 }
