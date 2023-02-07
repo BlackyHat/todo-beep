@@ -21,6 +21,7 @@ section {
 
 body {
   background-color: var(--background-color);
+  color: var(--color);
   transition: color 500ms linear, background-color 500ms linear;
 }
 

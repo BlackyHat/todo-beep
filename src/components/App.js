@@ -1,24 +1,64 @@
-import { useEffect } from "react";
+import { useEffect, lazy } from "react";
 import { useDispatch } from "react-redux";
-import { fetchTodos } from "redux/operations";
+
+import { Routes, Route } from "react-router-dom";
+import { useAuth } from "hooks/useAuth";
+import { RestrictedRoute } from "./RestrictedRoute";
+import { PrivateRoute } from "./PrivateRoute";
+
 import { Layout } from "components/Layout/Layout";
-import { AppBar } from "components/AppBar/AppBar";
-import { TaskForm } from "components/TaskForm/TaskForm";
-import { TaskList } from "components/TaskList/TaskList";
-import { Section } from "./Section/Section";
+import { Loading } from "components/Loading/Loading";
+import { auth } from "../firebase";
+import { relogin, relogout } from "redux/auth/auth-slice";
+
+const HomePage = lazy(() => import("pages/HomePage/HomePage"));
+const Tasks = lazy(() => import("pages/Tasks"));
+const LogInPage = lazy(() => import("pages/LoginPage"));
+const Register = lazy(() => import("pages/Register"));
 
 export const App = () => {
   const dispatch = useDispatch();
+  const { isRefreshing } = useAuth();
+
   useEffect(() => {
-    dispatch(fetchTodos());
+    auth.onAuthStateChanged((userAuth) => {
+      if (userAuth) {
+        // user is logged in, send the user's details to redux,
+        // store the current user in the state
+        dispatch(
+          relogin({
+            email: userAuth.email,
+            name: userAuth.email.split("@")[0],
+          })
+        );
+      } else {
+        dispatch(relogout());
+      }
+    });
   }, [dispatch]);
-  return (
-    <Layout>
-      <AppBar />
-      <Section>
-        <TaskForm />
-        <TaskList />
-      </Section>
-    </Layout>
+
+  return isRefreshing ? (
+    <Loading />
+  ) : (
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<HomePage />}></Route>
+        <Route
+          path="/todos"
+          element={<PrivateRoute component={Tasks} redirectTo="/login" />}
+        />
+        <Route
+          path="/login"
+          element={
+            <RestrictedRoute component={LogInPage} redirectTo="/todos" />
+          }
+        />
+        <Route
+          path="/register"
+          element={<RestrictedRoute component={Register} redirectTo="/todos" />}
+        />
+        <Route path="*" element={<HomePage />} />
+      </Route>
+    </Routes>
   );
 };

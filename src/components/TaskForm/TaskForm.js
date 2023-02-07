@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux";
-import { addTodo } from "redux/operations";
+import { addTodo } from "redux/todos/todos-operations";
 //
 import { Button } from "components/Button/Button";
 //

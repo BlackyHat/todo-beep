@@ -9,9 +9,9 @@ import {
   getIsLoading,
   getError,
   getStatusFilter,
-} from "redux/selectors";
+} from "redux/todos/todos-selectors";
 import css from "./TaskList.module.css";
-import { statusFilters } from "redux/constants";
+import { statusFilters } from "redux/todos/todos-constants";
 
 const getVisibleTasks = (tasks, statusFilter) => {
   switch (statusFilter) {

@@ -1,14 +1,26 @@
 import { ButtonTheme } from "components/ButtonTheme/ButtonTheme";
-import css from "./AppBar.module.css";
+import UserMenu from "components/UserMenu";
+import { useAuth } from "hooks/useAuth";
+import { BestLink, Header, Navigation, Title } from "./AppBar.styled";
 
 export const AppBar = () => {
+  const { isLoggedIn } = useAuth();
+
   return (
-    <header className={css.wrapper}>
-      <section className={css.section}>
-        <h2 className={css.title}>
-          Tasks to beep <ButtonTheme />
-        </h2>
-      </section>
-    </header>
+    <Header>
+      <Title>
+        Tasks to beep <ButtonTheme />
+      </Title>
+      <Navigation>
+        {isLoggedIn ? (
+          <>
+            <BestLink to="/todos">Tasks</BestLink>
+            <UserMenu />
+          </>
+        ) : (
+          <BestLink to="/login">Login</BestLink>
+        )}
+      </Navigation>
+    </Header>
   );
 };
