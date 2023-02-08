@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/todo-beep/static/css/main.bef9a9f4.css",
-    "main.js": "/todo-beep/static/js/main.e50c1b30.js",
+    "main.css": "/todo-beep/static/css/main.adb92a54.css",
+    "main.js": "/todo-beep/static/js/main.26b66d94.js",
     "static/js/812.7384ef62.chunk.js": "/todo-beep/static/js/812.7384ef62.chunk.js",
     "static/css/190.000a93ef.chunk.css": "/todo-beep/static/css/190.000a93ef.chunk.css",
-    "static/js/190.bdaa9f8e.chunk.js": "/todo-beep/static/js/190.bdaa9f8e.chunk.js",
-    "static/js/106.507da18c.chunk.js": "/todo-beep/static/js/106.507da18c.chunk.js",
-    "static/js/860.8244b6b8.chunk.js": "/todo-beep/static/js/860.8244b6b8.chunk.js",
+    "static/js/190.84e40292.chunk.js": "/todo-beep/static/js/190.84e40292.chunk.js",
+    "static/js/106.45ef81da.chunk.js": "/todo-beep/static/js/106.45ef81da.chunk.js",
+    "static/js/860.68eac1a7.chunk.js": "/todo-beep/static/js/860.68eac1a7.chunk.js",
     "static/js/355.99c8104b.chunk.js": "/todo-beep/static/js/355.99c8104b.chunk.js",
     "static/js/128.df28f01f.chunk.js": "/todo-beep/static/js/128.df28f01f.chunk.js",
     "index.html": "/todo-beep/index.html",
-    "main.bef9a9f4.css.map": "/todo-beep/static/css/main.bef9a9f4.css.map",
-    "main.e50c1b30.js.map": "/todo-beep/static/js/main.e50c1b30.js.map",
+    "main.adb92a54.css.map": "/todo-beep/static/css/main.adb92a54.css.map",
+    "main.26b66d94.js.map": "/todo-beep/static/js/main.26b66d94.js.map",
     "812.7384ef62.chunk.js.map": "/todo-beep/static/js/812.7384ef62.chunk.js.map",
     "190.000a93ef.chunk.css.map": "/todo-beep/static/css/190.000a93ef.chunk.css.map",
-    "190.bdaa9f8e.chunk.js.map": "/todo-beep/static/js/190.bdaa9f8e.chunk.js.map",
-    "106.507da18c.chunk.js.map": "/todo-beep/static/js/106.507da18c.chunk.js.map",
-    "860.8244b6b8.chunk.js.map": "/todo-beep/static/js/860.8244b6b8.chunk.js.map",
+    "190.84e40292.chunk.js.map": "/todo-beep/static/js/190.84e40292.chunk.js.map",
+    "106.45ef81da.chunk.js.map": "/todo-beep/static/js/106.45ef81da.chunk.js.map",
+    "860.68eac1a7.chunk.js.map": "/todo-beep/static/js/860.68eac1a7.chunk.js.map",
     "355.99c8104b.chunk.js.map": "/todo-beep/static/js/355.99c8104b.chunk.js.map",
     "128.df28f01f.chunk.js.map": "/todo-beep/static/js/128.df28f01f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bef9a9f4.css",
-    "static/js/main.e50c1b30.js"
+    "static/css/main.adb92a54.css",
+    "static/js/main.26b66d94.js"
   ]
 }
