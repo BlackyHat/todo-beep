@@ -13,7 +13,11 @@ export const TaskForm = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     const form = event.target;
-    dispatch(addTodo(form.elements.text.value));
+    const text = form.elements.text.value.trim();
+    if (!text.length) {
+      return;
+    }
+    dispatch(addTodo(text));
     form.reset();
   };
 

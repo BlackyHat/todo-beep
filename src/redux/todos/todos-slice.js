@@ -40,7 +40,6 @@ const tasksSlice = createSlice({
       .addCase(deleteTodo.fulfilled, (state, action) => {
         state.isLoading = false;
         state.error = null;
-        console.log(action.payload);
         const index = state.items.findIndex(
           (todo) => todo.id === action.payload
         );

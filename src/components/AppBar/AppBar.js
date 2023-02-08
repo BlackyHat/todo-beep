@@ -9,7 +9,7 @@ export const AppBar = () => {
   return (
     <Header>
       <Title>
-        Tasks to beep <ButtonTheme />
+        BeepPlan <ButtonTheme />
       </Title>
       <Navigation>
         {isLoggedIn ? (

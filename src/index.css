@@ -28,6 +28,7 @@ body {
 /* theme style */
 html[data-theme="dark"] {
   --text-color: rgb(10, 203, 247);
+  --button-color: #000000;
   --color: rgb(10, 203, 247);
   --background-color: #252525;
   --bottom-color: rgb(59, 141, 149);
@@ -39,6 +40,7 @@ html[data-theme="dark"] {
 
 html[data-theme="light"] {
   --text-color: #000000;
+  --button-color: #ffffff;
   --todo-item-bg-color: #000000;
   --todo-item-color: #ffffff;
   --background-color: #d9ff00;

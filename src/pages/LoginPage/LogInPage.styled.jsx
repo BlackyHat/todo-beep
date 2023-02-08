@@ -29,7 +29,7 @@ export const FormErrorMsg = styled(ErrorMessage)`
 export const BestButton = styled.button`
   padding: 8px 12px;
   border-radius: 8px;
-  color: black;
+  color: var(--button-color);
   background-color: var(--text-color);
 
   border: none;

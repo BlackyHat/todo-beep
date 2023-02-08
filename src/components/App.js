@@ -9,7 +9,7 @@ import { PrivateRoute } from "./PrivateRoute";
 import { Layout } from "components/Layout/Layout";
 import { Loading } from "components/Loading/Loading";
 import { auth } from "../firebase";
-import { relogin, relogout } from "redux/auth/auth-slice";
+import { relogin } from "redux/auth/auth-slice";
 
 const HomePage = lazy(() => import("pages/HomePage/HomePage"));
 const Tasks = lazy(() => import("pages/Tasks"));
@@ -31,8 +31,6 @@ export const App = () => {
             name: userAuth.email.split("@")[0],
           })
         );
-      } else {
-        dispatch(relogout());
       }
     });
   }, [dispatch]);
