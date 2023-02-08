@@ -7,7 +7,7 @@ const HomePage = () => {
       <p>This app created by using react-create-app.</p>
       <h2>Using next features:</h2>
       <p>React.js, React-router-dom,</p>
-      <p>Redux-toolkit, Redux-persist, </p>
+      <p>Redux-toolkit, AsyncTank, </p>
       <p>Google Firebase, Auth ...</p>
     </Box>
   );

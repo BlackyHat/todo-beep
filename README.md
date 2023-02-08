@@ -9,18 +9,14 @@ in this repo i used next practice:
 - use gh-pages and deploy
 - react hooks;
 - REST API;
-- axios;
 - add loader;
 - builder (update createSlice);
-- add google firebase DB
+- add google firebase storage;
+- add google auth by login/email;
 
 Plans to add:
 
-<!-- - routes;
 - rtk query;
-- material ui; -->
-
-- auth;
 - footer;
 - filter;
 - editor;

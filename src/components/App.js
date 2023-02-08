@@ -2,18 +2,18 @@ import { useEffect, lazy } from "react";
 import { useDispatch } from "react-redux";
 
 import { Routes, Route } from "react-router-dom";
+import { refreshUser } from "redux/auth/auth-operations";
 import { useAuth } from "hooks/useAuth";
 import { RestrictedRoute } from "./RestrictedRoute";
 import { PrivateRoute } from "./PrivateRoute";
 
-import { Layout } from "components/Layout/Layout";
-import { Loading } from "components/Loading/Loading";
-import { refreshUser } from "redux/auth/auth-operations";
+import Layout from "components/Layout";
+import Loading from "components/Loading";
 
 const HomePage = lazy(() => import("pages/HomePage/HomePage"));
 const Tasks = lazy(() => import("pages/Tasks"));
-const LogInPage = lazy(() => import("pages/LoginPage"));
-const Register = lazy(() => import("pages/Register"));
+const LoginPage = lazy(() => import("pages/LoginPage/LoginPage"));
+const Register = lazy(() => import("pages/Register/Register"));
 
 export const App = () => {
   const dispatch = useDispatch();
@@ -36,7 +36,7 @@ export const App = () => {
         <Route
           path="/login"
           element={
-            <RestrictedRoute component={LogInPage} redirectTo="/todos" />
+            <RestrictedRoute component={LoginPage} redirectTo="/todos" />
           }
         />
         <Route

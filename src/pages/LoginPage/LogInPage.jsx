@@ -12,7 +12,7 @@ import {
   FormErrorMsg,
   InputItem,
   LinkToRegister,
-} from "./LogInPage.styled";
+} from "./LoginPage.styled";
 
 const schemaAddContact = Yup.object().shape({
   email: Yup.string()
@@ -30,7 +30,7 @@ const initialValues = {
   password: "",
 };
 
-const LogInPage = () => {
+const LoginPage = () => {
   const dispatch = useDispatch();
   const { addToast } = CustomToast();
 
@@ -75,11 +75,13 @@ const LogInPage = () => {
           <BestButton type="submit" disabled={isSubmitting}>
             Log in
           </BestButton>
-          <LinkToRegister as={Link} to="/register">Create an account</LinkToRegister>
+          <LinkToRegister as={Link} to="/register">
+            Create an account
+          </LinkToRegister>
         </BestForm>
       )}
     </Formik>
   );
 };
 
-export default LogInPage;
+export default LoginPage;

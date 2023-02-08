@@ -1,5 +1,5 @@
 import { RevolvingDot } from "react-loader-spinner";
-export const Loading = () => {
+const Loading = () => {
   return (
     <RevolvingDot
       height="100"
@@ -14,3 +14,5 @@ export const Loading = () => {
     />
   );
 };
+
+export default Loading;

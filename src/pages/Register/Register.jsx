@@ -35,7 +35,7 @@ const initialValues = {
   email: "",
 };
 
-const SignUp = () => {
+const Register = () => {
   const dispatch = useDispatch();
 
   const { addToast } = CustomToast();
@@ -100,4 +100,4 @@ const SignUp = () => {
   );
 };
 
-export default SignUp;
+export default Register;
