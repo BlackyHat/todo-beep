@@ -8,8 +8,7 @@ import { PrivateRoute } from "./PrivateRoute";
 
 import { Layout } from "components/Layout/Layout";
 import { Loading } from "components/Loading/Loading";
-import { auth } from "../firebase";
-import { relogin } from "redux/auth/auth-slice";
+import { refreshUser } from "redux/auth/auth-operations";
 
 const HomePage = lazy(() => import("pages/HomePage/HomePage"));
 const Tasks = lazy(() => import("pages/Tasks"));
@@ -21,18 +20,7 @@ export const App = () => {
   const { isRefreshing } = useAuth();
 
   useEffect(() => {
-    auth.onAuthStateChanged((userAuth) => {
-      if (userAuth) {
-        // user is logged in, send the user's details to redux,
-        // store the current user in the state
-        dispatch(
-          relogin({
-            email: userAuth.email,
-            name: userAuth.email.split("@")[0],
-          })
-        );
-      }
-    });
+    dispatch(refreshUser());
   }, [dispatch]);
 
   return isRefreshing ? (

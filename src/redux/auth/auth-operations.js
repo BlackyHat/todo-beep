@@ -5,6 +5,7 @@ import {
   signOut,
 } from "firebase/auth";
 import { auth } from "../../firebase";
+import { setLoggedIn, setLoggedOut } from "./auth-slice";
 
 export const register = createAsyncThunk(
   "auth/register",
@@ -42,3 +43,20 @@ export const logOut = createAsyncThunk("auth/logout", async (_, thunkAPI) => {
     return thunkAPI.rejectWithValue(error.message);
   }
 });
+
+export const refreshUser = createAsyncThunk(
+  "auth/refresh",
+  async (_, thunkAPI) => {
+    auth.onAuthStateChanged((user) => {
+      if (user) {
+        const currentUser = {
+          email: user.email,
+          name: user.email.split("@")[0],
+        };
+        thunkAPI.dispatch(setLoggedIn(currentUser));
+      } else {
+        thunkAPI.dispatch(setLoggedOut());
+      }
+    });
+  }
+);
