@@ -8,7 +8,7 @@ const HomePage = () => {
       <h2>Using next features:</h2>
       <p>React.js, React-router-dom,</p>
       <p>Redux-toolkit, Redux-persist, </p>
-      <p>Google Firebase+Auth, Chakra UI, Axios ...</p>
+      <p>Google Firebase, Auth ...</p>
     </Box>
   );
 };
