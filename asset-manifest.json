@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/todo-beep/static/css/main.adb92a54.css",
-    "main.js": "/todo-beep/static/js/main.0a1804e1.js",
-    "static/js/812.d412ca46.chunk.js": "/todo-beep/static/js/812.d412ca46.chunk.js",
+    "main.js": "/todo-beep/static/js/main.be7f7709.js",
+    "static/js/812.8868196f.chunk.js": "/todo-beep/static/js/812.8868196f.chunk.js",
     "static/css/190.000a93ef.chunk.css": "/todo-beep/static/css/190.000a93ef.chunk.css",
     "static/js/190.84e40292.chunk.js": "/todo-beep/static/js/190.84e40292.chunk.js",
     "static/js/589.1a3cb048.chunk.js": "/todo-beep/static/js/589.1a3cb048.chunk.js",
@@ -11,8 +11,8 @@
     "static/js/128.df28f01f.chunk.js": "/todo-beep/static/js/128.df28f01f.chunk.js",
     "index.html": "/todo-beep/index.html",
     "main.adb92a54.css.map": "/todo-beep/static/css/main.adb92a54.css.map",
-    "main.0a1804e1.js.map": "/todo-beep/static/js/main.0a1804e1.js.map",
-    "812.d412ca46.chunk.js.map": "/todo-beep/static/js/812.d412ca46.chunk.js.map",
+    "main.be7f7709.js.map": "/todo-beep/static/js/main.be7f7709.js.map",
+    "812.8868196f.chunk.js.map": "/todo-beep/static/js/812.8868196f.chunk.js.map",
     "190.000a93ef.chunk.css.map": "/todo-beep/static/css/190.000a93ef.chunk.css.map",
     "190.84e40292.chunk.js.map": "/todo-beep/static/js/190.84e40292.chunk.js.map",
     "589.1a3cb048.chunk.js.map": "/todo-beep/static/js/589.1a3cb048.chunk.js.map",
@@ -22,6 +22,6 @@
   },
   "entrypoints": [
     "static/css/main.adb92a54.css",
-    "static/js/main.0a1804e1.js"
+    "static/js/main.be7f7709.js"
   ]
 }
