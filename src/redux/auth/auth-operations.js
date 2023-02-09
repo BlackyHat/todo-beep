@@ -32,10 +32,9 @@ export const logIn = createAsyncThunk(
     try {
       const { email, password } = credentials;
       await signInWithEmailAndPassword(auth, email, password);
-      const { displayName: name } = auth.currentUser;
+      const { displayName } = auth.currentUser;
+      const name = displayName || email.split("@")[0];
       const user = { name, email };
-      console.log(user);
-
       return { user };
     } catch (error) {
       return thunkAPI.rejectWithValue(error.message);
@@ -60,7 +59,6 @@ export const refreshUser = createAsyncThunk(
           email: user.email,
           name: user.displayName,
         };
-        console.log(currentUser);
         thunkAPI.dispatch(setLoggedIn(currentUser));
       } else {
         thunkAPI.dispatch(setLoggedOut());
