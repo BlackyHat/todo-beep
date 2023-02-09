@@ -17,6 +17,8 @@ export const register = createAsyncThunk(
       await createUserWithEmailAndPassword(auth, email, password);
       await updateProfile(auth.currentUser, { displayName: name });
       const user = { name, email };
+      console.log(user);
+
       return { user };
     } catch (error) {
       return thunkAPI.rejectWithValue(error.message);
@@ -32,6 +34,8 @@ export const logIn = createAsyncThunk(
       await signInWithEmailAndPassword(auth, email, password);
       const { displayName: name } = auth.currentUser;
       const user = { name, email };
+      console.log(user);
+
       return { user };
     } catch (error) {
       return thunkAPI.rejectWithValue(error.message);
@@ -56,6 +60,7 @@ export const refreshUser = createAsyncThunk(
           email: user.email,
           name: user.displayName,
         };
+        console.log(currentUser);
         thunkAPI.dispatch(setLoggedIn(currentUser));
       } else {
         thunkAPI.dispatch(setLoggedOut());
