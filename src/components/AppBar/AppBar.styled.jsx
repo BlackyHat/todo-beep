@@ -24,10 +24,13 @@ export const Navigation = styled.nav`
   color: var(--text-color);
 `;
 
-export const BestLink = styled(NavLink)`
+export const HomeLink = styled(NavLink)`
   color: var(--text-color);
-  text-transform: uppercase;
   text-decoration: none;
+`;
+
+export const BestLink = styled(HomeLink)`
+  text-transform: uppercase;
 
   &.active {
     color: #7f2798;

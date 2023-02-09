@@ -1,7 +1,7 @@
 import { ButtonTheme } from "components/ButtonTheme/ButtonTheme";
 import UserMenu from "components/UserMenu";
 import { useAuth } from "hooks/useAuth";
-import { BestLink, Header, Navigation, Title } from "./AppBar.styled";
+import { BestLink, Header, HomeLink, Navigation, Title } from "./AppBar.styled";
 
 export const AppBar = () => {
   const { isLoggedIn } = useAuth();
@@ -9,7 +9,7 @@ export const AppBar = () => {
   return (
     <Header>
       <Title>
-        BeepPlan <ButtonTheme />
+        <HomeLink to="/">BeepPlan</HomeLink> <ButtonTheme />
       </Title>
       <Navigation>
         {isLoggedIn ? (
