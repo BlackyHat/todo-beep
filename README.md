@@ -13,6 +13,8 @@ in this repo i used next practice:
 - builder (update createSlice);
 - add google firebase storage;
 - add google auth by login/email;
+- add typescript;
+- add toast;
 
 Plans to add:
 
@@ -22,4 +24,3 @@ Plans to add:
 - editor;
 - modal window;
 - feedback window;
-- add toast
